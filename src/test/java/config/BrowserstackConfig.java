@@ -12,8 +12,8 @@ public interface BrowserstackConfig extends Config {
     String device();
 
     @DefaultValue("11")
-    @Config.Key("deviceOsVersion")
-    String deviceOsVersion();
+    @Config.Key("version")
+    String version();
 
     @DefaultValue("https://hub.browserstack.com/wd/hub")
     @Config.Key("remoteUrl")

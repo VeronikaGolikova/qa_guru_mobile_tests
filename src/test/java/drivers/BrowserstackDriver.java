@@ -32,7 +32,7 @@ public class BrowserstackDriver implements WebDriverProvider {
 
         // Specify device and os_version for testing
         caps.setCapability("appium:device", browserstackConfig.device());
-        caps.setCapability("appium:os_version", browserstackConfig.deviceOsVersion());
+        caps.setCapability("appium:os_version", browserstackConfig.version());
 
         // Set other BrowserStack capabilities
         caps.setCapability("appium:project", "First Java Project");
