@@ -7,15 +7,12 @@ import org.aeonbits.owner.Config;
 })
 public interface BrowserstackConfig extends Config {
 
-    @DefaultValue("Galaxy S21")
-    @Config.Key("device")
+    @DefaultValue("Google Pixel 3")
     String device();
 
-    @DefaultValue("11")
-    @Config.Key("version")
+    @DefaultValue("9.0")
     String version();
 
     @DefaultValue("https://hub.browserstack.com/wd/hub")
-    @Config.Key("remoteUrl")
     String remoteUrl();
 }
